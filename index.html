@@ -1,0 +1,110 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>Sonja Boie</title>
+
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Karla|Playfair+Display" rel="stylesheet">
+</head>
+<body>
+	
+
+	<section id="hero">
+		<div class="text">
+			<h1>Sonja Boie</h1>
+			<span>Design + Du</span>		
+		</div>
+	</section>
+
+	<section id="quote">
+		<div class="container">
+			<h2>Design - ein Prozeß des bewußten Gestalten - kreativ, gestalterisch und konzeptionell immer in Interaktion mit dem Benutzer!</h2>
+		</div>
+	</section>
+
+	<section id="images">
+		<ul id="slider" class="horizontal-slider horizontal dragscroll">
+			<li class="slide 0">
+				<div class="image" style="background-image: url('assets/slider-image-1.jpg')"></div>
+				<span>Zweitausendvierzehn</span>
+			</li>
+			<li class="slide 1">
+				<div class="image" style="background-image: url('assets/slider-image-2.jpg')"></div>
+				<span>Zweitausendvierzehn</span>
+			</li>
+			<li class="slide 2">
+				<div class="image" style="background-image: url('assets/slider-image-3.jpg')"></div>
+				<span>Zweitausendvierzehn</span>
+			</li>
+			<li class="slide">
+				<div class="image" style="background-image: url('assets/slider-image-4.jpg')"></div>
+				<span>Zweitausendvierzehn</span>
+			</li>
+			<li class="slide">
+				<div class="image" style="background-image: url('assets/slider-image-5.jpg')"></div>
+				<span>Zweitausendvierzehn</span>
+			</li>
+			<li class="slide">
+				<div class="image" style="background-image: url('assets/slider-image-6.jpg')"></div>
+				<span>Zweitausendvierzehn</span>
+			</li>
+			<li class="slide">
+				<div class="image" style="background-image: url('assets/slider-image-7.jpg')"></div>
+				<span>Zweitausendvierzehn</span>
+			</li>
+		</ul>
+	</section>
+
+	<section id="about">
+		<div class="container">
+			<div class="text">
+				<h2>Über Mich</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex atque et fugiat nemo modi inventore minus unde placeat quidem doloribus, ipsam odit molestias beatae, dicta, ducimus at quo, natus aut!
+				</p>
+			</div>
+			
+			<div class="image">
+				<img src="assets/background-image.jpg" alt="Sonja Boie">
+			</div>
+
+		</div>
+	</section>
+
+	<section id="contact">
+		<div class="container">
+			<div class="text">
+				<span>Kontakt</span>
+				<h2><a href="mailto:kontakt@sonjaboie.design">kontakt@sonjaboie.design</a></h2>
+				<h3><a href="tel:00491705512618">+49 170 5512618</a></h3>
+			</div>
+		</div>
+	</section id="contact">
+
+
+	<!-- Scripts -->
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="js/dragscroll.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			// Slider Elements
+			$slider = $('#slider');
+			$slides = $slider.children('li')
+
+
+			// Start Position
+			var slideWidth = $('#slider li').outerWidth();
+			var startPosition = slideWidth - (($(document).width() - slideWidth) / 2);
+			$slider.scrollLeft(startPosition);
+		})
+	</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+
+#slider{
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#slider li {
+	display: inline;
+}
+
+#slider li {
+	padding: 32px 5%;
+}
+#slider li img{
+	max-width: 61%;
+	max-height: 455px;
+}
+
+
+#slider li span{
+	display: none;
+	text-align: center;
+}
+
+<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+
+			// Slider Elements
+			$slider = $('#slider');
+			$slides = $slider.children('li')
+
+			// Status
+			currentSlide = 1;
+
+
+			function init() {
+				// Start Position
+				var slideWidth = $('#slider li').outerWidth();
+				var startPosition = slideWidth - (($(document).width() - slideWidth) / 2);
+				$slider.scrollLeft(startPosition);
+
+				// Event Listeners
+				$slides.on('click', slide);
+
+			}
+
+			function slide(event) {
+				$slide = $(event.currentTarget);
+
+				// If clicked slide is the current slide do nothing
+				if($slide.data('id') == currentSlide) {
+					event.preventDefault();
+					return;
+				}
+
+				if($slide.data('id') > currentSlide) {
+					$firstSlide =  $('#slider li').first();
+					$firstSlide.animate({
+						'width': '0%'
+					}, 500, function() {
+						$firstSlide.remove();
+						$slider.append($firstSlide);
+						$firstSlide.animate({'width': 'toggle'}, 0)
+					})
+				}
+			}
+
+			init();
+		})
+		*/
+
+	</script>
+
+	<section id="images">
+		<ul id="slider" class="horizontal-slider">
+			<li class="slide 0" data-id="0">
+				<img src="assets/slider-image-1.jpg" alt="">	
+				<span>Zweitausendvierzehn</span>
+			</li>
+			<li class="slide 1" data-id="1">
+				<img src="assets/slider-image-2.jpg" alt="">	
+				<span>Zweitausendvierzehn</span>
+			</li>
+			<li class="slide 2" data-id="2">
+				<img src="assets/slider-image-3.jpg" alt="">	
+				<span>Zweitausendvierzehn</span>
+			</li>
+			<li class="slide 3" data-id="3">
+				<img src="assets/slider-image-4.jpg" alt="">	
+				<span>Zweitausendvierzehn</span>
+			</li>
+		</ul>
+	</section>
