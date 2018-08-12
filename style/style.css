@@ -216,7 +216,7 @@ section#privacy p {
 	margin: 8px 0;	
 }
 
-section#privacy p {
+section#privacy ul {
 	list-style: circle inside;
 }
 
