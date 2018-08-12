@@ -216,6 +216,10 @@ section#privacy p {
 	margin: 8px 0;	
 }
 
+section#privacy p {
+	list-style: circle inside;
+}
+
 
 /* Typography */
 body{
@@ -230,6 +234,11 @@ h1, h2, h3{
 }
 
 p{
+	color: rgba(0,0,0,0.54);
+	line-height: 1.4;
+}
+
+ul, li {
 	color: rgba(0,0,0,0.54);
 	line-height: 1.4;
 }
