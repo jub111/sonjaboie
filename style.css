@@ -173,6 +173,12 @@ section#contact span{
 	section#contact h3{font-size: 24px;}
 }
 
+section#legal {
+	text-align: center;
+	padding: 24px 0;
+	color: rgba(0,0,0,0.54);
+}
+
 /* Typography */
 body{
 	font-family: 'Karla', sans-serif;
