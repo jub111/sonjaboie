@@ -181,6 +181,42 @@ section#contact span{
 	section#contact h3{font-size: 24px;}
 }
 
+/* Legal */
+
+section#legal {
+	text-align: center;
+	padding: 24px 0;
+	color: rgba(0,0,0,0.54);
+}
+
+/* Privacy Policy */
+
+section#privacy {
+	padding: 64px 0;	
+	max-width: 640px;
+	margin: 0px auto;
+}
+
+section#privacy h1 {
+	font-size: 36px;
+	margin-bottom: 24px;
+}
+
+section#privacy h2 {
+	font-size: 24px;
+	margin-bottom: 16px;	
+}
+
+section#privacy h3 {
+	font-size: 20px;
+	margin-bottom: 8px;	
+}
+
+section#privacy p {
+	margin: 8px 0;	
+}
+
+
 /* Typography */
 body{
 	font-family: 'Karla', sans-serif;
